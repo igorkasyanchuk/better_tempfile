@@ -2,7 +2,7 @@
 
 In Ruby `Tempfile` is the best and reliable way to create tempfiles. 
 
-But when you do something like: `file = Tempfile.new("file.txt")` -> `file.path` is equal to `/tmp/file.txt20181103-58381-d61l83` (without extension).
+But when you do something like: `file = Tempfile.new("file.txt")` -> `file.path` is equal to `/tmp/file.txt20181103-58381-d61l83` (you can see it's without extension). So this is a little problem.
 
 This gem is adding a way to get proper extension for your Tempfile.
 
