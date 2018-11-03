@@ -1,12 +1,12 @@
 # BetterTempfile
 
-Ruby Temfile is the best and reliable way to create tempfiles. 
+In Ruby `Tempfile` is the best and reliable way to create tempfiles. 
 
 But when you do something like: `file = Tempfile.new("file.txt")` -> `file.path` is equal to `/tmp/file.txt20181103-58381-d61l83` (without extension).
 
-This gem is adding a way to get proper extension for your Temfile.
+This gem is adding a way to get proper extension for your Tempfile.
 
-Just call `BetterTemfile.new("file.txt")`.
+Just call `BetterTempfile.new("file.txt")` and you will get something like `/tmp/file20181103-58381-d61l83.txt`. It's useful when file extension is making a difference in your code.
 
 ## Installation
 
@@ -24,9 +24,9 @@ Or install it yourself as:
 
 ## Usage
 
-Instead of `Temfile.new("file.txt")` just call `BetterTemfile.new("file.txt")`.
+Instead of `Tempfile.new("file.txt")` just call `BetterTempfile.new("file.txt")`.
 
-`BetterTemfile` is inherites from Tempfile so it has all methods of it, and you must work with it same way as with Tempfile (for example close and unlink).
+`BetterTempfile` is inherites from Tempfile so it has all methods of it, and you must work with it same way as with Tempfile (for example close and unlink).
 
 ## Development
 
